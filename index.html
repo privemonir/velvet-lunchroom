@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VELVET — Ontbijt • Lunch • Koffie | Luxe Lunchroom</title>
-  <meta name="description" content="VELVET is een exclusieve lunchroom voor ontbijt, lunch en koffie. Verse ingrediënten, ambachtelijke bereiding en een warme, luxe sfeer." />
-  <meta name="keywords" content="lunchroom, ontbijt, lunch, koffie, patisserie, VELVET, luxe café, brunch" />
-  <meta name="author" content="VELVET" />
+  <title>VELVET Lunchroom Utrecht — Halal Ontbijt, Lunch & Koffie</title>
+  <meta name="description" content="VELVET is een halal lunchroom in Utrecht (Winkelcentrum Vasco da Gama). Geniet van vers ontbijt, lunch, broodjes, koffie en patisserie in een warme, luxe sfeer. ★ 4,6 op Google." />
+  <meta name="keywords" content="lunchroom Utrecht, halal lunchroom Utrecht, ontbijt Utrecht, lunch Utrecht, koffie Utrecht, brunch Utrecht, Marokkaans ontbijt, VELVET lunchroom, Kanaleneiland, Vasco da Gama" />
+  <meta name="author" content="VELVET Lunchroom" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#B89A5D" />
   <link rel="canonical" href="https://www.velvetlunchroom.nl/" />
+
+  <!-- Lokale SEO -->
+  <meta name="geo.region" content="NL-UT" />
+  <meta name="geo.placename" content="Utrecht" />
+  <meta name="geo.position" content="52.066694;5.0992445" />
+  <meta name="ICBM" content="52.066694, 5.0992445" />
 
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -16,12 +23,19 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="restaurant" />
-  <meta property="og:title" content="VELVET — Luxe Lunchroom" />
-  <meta property="og:description" content="Ontbijt • Lunch • Koffie. Een exclusieve lunchroom met verse ingrediënten en ambachtelijke bereiding." />
+  <meta property="og:site_name" content="VELVET Lunchroom" />
+  <meta property="og:title" content="VELVET Lunchroom Utrecht — Halal Ontbijt, Lunch & Koffie" />
+  <meta property="og:description" content="Halal lunchroom in Utrecht (Vasco da Gama) voor vers ontbijt, lunch, koffie en patisserie. ★ 4,6 op Google." />
   <meta property="og:locale" content="nl_NL" />
   <meta property="og:url" content="https://www.velvetlunchroom.nl/" />
   <meta property="og:image" content="https://www.velvetlunchroom.nl/assets/hero-velvet.webp" />
+  <meta property="og:image:alt" content="Het sfeervolle interieur van VELVET Lunchroom in Utrecht" />
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VELVET Lunchroom Utrecht — Halal Ontbijt, Lunch & Koffie" />
+  <meta name="twitter:description" content="Halal lunchroom in Utrecht voor vers ontbijt, lunch, koffie en patisserie. ★ 4,6 op Google." />
+  <meta name="twitter:image" content="https://www.velvetlunchroom.nl/assets/hero-velvet.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preload" as="image" href="assets/hero-velvet.webp" fetchpriority="high" />
@@ -58,24 +72,47 @@
   {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
-    "name": "VELVET",
-    "description": "Luxe lunchroom voor ontbijt, lunch en koffie.",
-    "servesCuisine": ["Ontbijt", "Lunch", "Koffie", "Patisserie"],
+    "@id": "https://www.velvetlunchroom.nl/#lunchroom",
+    "name": "VELVET Lunchroom",
+    "description": "Halal lunchroom in Utrecht voor ontbijt, lunch, koffie en patisserie.",
+    "url": "https://www.velvetlunchroom.nl/",
+    "image": "https://www.velvetlunchroom.nl/assets/hero-velvet.webp",
+    "logo": "https://www.velvetlunchroom.nl/assets/favicon.svg",
+    "servesCuisine": ["Ontbijt", "Lunch", "Koffie", "Patisserie", "Halal", "Marokkaans"],
     "priceRange": "€ 10-20",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Contant, Pin, Creditcard",
     "telephone": "+31 6 36158941",
     "email": "info@velvetlunchroom.nl",
+    "hasMenu": "https://www.velvetlunchroom.nl/menu.html",
+    "acceptsReservations": "False",
+    "sameAs": [
+      "https://www.instagram.com/velvet_lunchroom/",
+      "https://www.tiktok.com/@velvetlunchroom"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Marco Pololaan 363-365",
       "addressLocality": "Utrecht",
       "postalCode": "3526 GG",
+      "addressRegion": "Utrecht",
       "addressCountry": "NL"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "52.066694",
+      "longitude": "5.0992445"
+    },
+    "hasMap": "https://www.google.com/maps?q=Marco+Pololaan+363-365,+3526+GG+Utrecht",
     "containedInPlace": {
       "@type": "ShoppingCenter",
       "name": "Winkelcentrum Vasco Da Gama"
     },
-    "openingHours": ["Mo 09:00-18:00", "We-Fr 09:00-18:00", "Sa-Su 10:00-18:00"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "00:00", "closes": "00:00", "description": "Gesloten" }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.6",
@@ -272,37 +309,37 @@
         <div class="masonry-item video-item">
           <video src="assets/gallery/velvet-1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sfeervideo van gerechten bij Velvet"></video>
         </div>
-        <div class="masonry-item"><img src="assets/gallery/g-01.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-02.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-03.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-04.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-05.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-06.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-07.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item"><img src="assets/gallery/g-08.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-01.jpg" alt="VELVET Lunchroom Utrecht — vers ontbijt" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-02.jpg" alt="VELVET Lunchroom Utrecht — fruitbowl met granola" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-03.jpg" alt="VELVET Lunchroom Utrecht — lunch en verse broodjes" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-04.jpg" alt="VELVET Lunchroom Utrecht — barista-koffie" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-05.jpg" alt="VELVET Lunchroom Utrecht — milkshake" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-06.jpg" alt="VELVET Lunchroom Utrecht — luchtige pancakes" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-07.jpg" alt="VELVET Lunchroom Utrecht — patisserie en zoetigheden" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-08.jpg" alt="VELVET Lunchroom Utrecht — verse smoothie" loading="lazy" /></div>
         <div class="masonry-item video-item is-hidden">
           <video src="assets/gallery/velvet-5.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sfeervideo van gerechten bij Velvet"></video>
         </div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-09.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-10.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-11.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-12.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-13.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-14.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-15.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-16.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-17.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-09.jpg" alt="VELVET Lunchroom Utrecht — mocktail" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-10.jpg" alt="VELVET Lunchroom Utrecht — sfeer in de lunchroom" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-11.jpg" alt="VELVET Lunchroom Utrecht — vers ontbijt" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-12.jpg" alt="VELVET Lunchroom Utrecht — fruitbowl met granola" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-13.jpg" alt="VELVET Lunchroom Utrecht — lunch en verse broodjes" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-14.jpg" alt="VELVET Lunchroom Utrecht — barista-koffie" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-15.jpg" alt="VELVET Lunchroom Utrecht — milkshake" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-16.jpg" alt="VELVET Lunchroom Utrecht — luchtige pancakes" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-17.jpg" alt="VELVET Lunchroom Utrecht — patisserie en zoetigheden" loading="lazy" /></div>
         <div class="masonry-item video-item is-hidden">
           <video src="assets/gallery/velvet-6.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sfeervideo van gerechten bij Velvet"></video>
         </div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-18.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-19.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-20.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-21.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-22.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-23.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-24.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
-        <div class="masonry-item is-hidden"><img src="assets/gallery/g-25.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-18.jpg" alt="VELVET Lunchroom Utrecht — verse smoothie" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-19.jpg" alt="VELVET Lunchroom Utrecht — mocktail" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-20.jpg" alt="VELVET Lunchroom Utrecht — sfeer in de lunchroom" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-21.jpg" alt="VELVET Lunchroom Utrecht — vers ontbijt" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-22.jpg" alt="VELVET Lunchroom Utrecht — fruitbowl met granola" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-23.jpg" alt="VELVET Lunchroom Utrecht — lunch en verse broodjes" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-24.jpg" alt="VELVET Lunchroom Utrecht — barista-koffie" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-25.jpg" alt="VELVET Lunchroom Utrecht — milkshake" loading="lazy" /></div>
       </div>
 
       <div class="text-center mt-12 reveal" data-reveal>
