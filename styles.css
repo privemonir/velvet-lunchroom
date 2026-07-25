@@ -13,8 +13,9 @@ body { overflow-x: hidden; }
 
 /* ===== Header states ===== */
 #header.scrolled {
-  background: rgba(248, 246, 242, 0.92);
-  backdrop-filter: blur(12px);
+  /* Let op: geen backdrop-filter — die maakt een 'containing block' waardoor
+     het fixed mobiele menu niet meer het hele scherm bedekt (glitch na scrollen). */
+  background: rgba(248, 246, 242, 0.97);
   box-shadow: 0 4px 30px rgba(44, 44, 44, 0.06);
 }
 /* On hero (top) keep logo readable on dark image — only on pages with a dark hero */
