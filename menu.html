@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — VELVET | Ontbijt • Lunch • Koffie</title>
+  <meta name="description" content="Bekijk het volledige menu van VELVET: ontbijt, lunch, broodjes, pancakes, snacks, sweets en een ruime keuze aan warme & koude dranken." />
+  <meta name="theme-color" content="#B89A5D" />
+  <link rel="canonical" href="https://www.velvetlunchroom.nl/menu.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Menu — VELVET Lunchroom" />
+  <meta property="og:description" content="Het volledige menu van VELVET: ontbijt, lunch, broodjes, pancakes, sweets en dranken." />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:url" content="https://www.velvetlunchroom.nl/menu.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { offwhite:'#F8F6F2', gold:'#B89A5D', darkgold:'#8D7441', beige:'#EFE8DC', ink:'#2C2C2C' },
+          fontFamily: { serif:['"Cormorant Garamond"','serif'], sans:['Jost','sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-offwhite text-ink font-sans antialiased">
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 scrolled">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+      <a href="index.html#hero" class="flex flex-col items-start leading-none" aria-label="VELVET home">
+        <span class="logo-word font-serif text-3xl md:text-4xl font-semibold text-gold tracking-[0.25em]">VELVET</span>
+        <span class="logo-sub text-[0.55rem] md:text-[0.6rem] text-darkgold tracking-[0.3em] uppercase mt-1">Ontbijt en Lunchroom</span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-widest uppercase">
+        <li><a href="index.html#about" class="nav-link">Over Velvet</a></li>
+        <li><a href="menu.html" class="nav-link text-gold">Menu</a></li>
+        <li><a href="catering.html" class="nav-link">Verhuur & Catering<span class="nav-soon">Soon</span></a></li>
+        <li><a href="index.html#gallery" class="nav-link">Galerij</a></li>
+        <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="index.html" class="hidden lg:inline-flex btn-outline text-xs tracking-widest uppercase px-6 py-3">Home</a>
+      <button id="menuToggle" class="lg:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-end" aria-label="Menu openen">
+        <span class="block w-7 h-px bg-ink"></span><span class="block w-5 h-px bg-ink"></span><span class="block w-7 h-px bg-ink"></span>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden fixed inset-0 bg-offwhite z-40 flex flex-col items-center justify-center gap-8 text-lg tracking-widest uppercase transition-all duration-500 opacity-0 pointer-events-none -translate-y-4">
+      <a href="index.html#about" class="mobile-link">Over Velvet</a>
+      <a href="menu.html" class="mobile-link text-gold">Menu</a>
+      <a href="catering.html" class="mobile-link">Verhuur & Catering</a>
+      <a href="index.html#gallery" class="mobile-link">Galerij</a>
+      <a href="index.html#reviews" class="mobile-link">Reviews</a>
+      <a href="index.html#contact" class="mobile-link">Contact</a>
+      <a href="index.html" class="btn-gold px-8 py-3 text-sm mt-4">Home</a>
+    </div>
+  </header>
+
+  <!-- ===== MENU HERO ===== -->
+  <section class="relative pt-44 pb-20 px-6 text-center overflow-hidden">
+    <div class="absolute inset-0 bg-beige/40"></div>
+    <div class="relative z-10 max-w-2xl mx-auto reveal" data-reveal>
+      <p class="text-gold tracking-[0.4em] uppercase text-xs mb-5">VELVET — Ontbijt en Lunchroom</p>
+      <h1 class="font-serif text-5xl md:text-6xl font-semibold mb-5">Ons Menu</h1>
+      <p class="text-ink/70 font-light leading-relaxed">Verse ingrediënten, ambachtelijk bereid en met liefde geserveerd — van een uitgebreid ontbijt tot verfijnde dranken.</p>
+    </div>
+  </section>
+
+  <!-- ===== STICKY CATEGORY NAV ===== -->
+  <nav class="sticky top-20 z-30 bg-offwhite/90 backdrop-blur border-y border-gold/15">
+    <div class="max-w-7xl mx-auto px-4 flex gap-6 overflow-x-auto py-3 scrollbar-hide" id="menuTabs">
+      <a href="#ontbijt" class="menu-tab">Ontbijt</a>
+      <a href="#lunch" class="menu-tab">Lunch</a>
+      <a href="#broodjes" class="menu-tab">Broodjes</a>
+      <a href="#pancakes" class="menu-tab">Pancakes</a>
+      <a href="#snacks" class="menu-tab">Snacks</a>
+      <a href="#sweets" class="menu-tab">Sweets</a>
+      <a href="#warm" class="menu-tab">Warme dranken</a>
+      <a href="#koud" class="menu-tab">Koude dranken</a>
+      <a href="#smoothies" class="menu-tab">Smoothies</a>
+      <a href="#shakes" class="menu-tab">Shakes</a>
+      <a href="#mocktails" class="menu-tab">Mocktails</a>
+    </div>
+  </nav>
+
+  <!-- ===== MENU CONTENT ===== -->
+  <main class="max-w-6xl mx-auto px-6 lg:px-10 py-20">
+
+    <div class="grid md:grid-cols-2 gap-x-16 gap-y-20">
+
+      <!-- ONTBIJT -->
+      <section id="ontbijt" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Ontbijt</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Marokkaans ontbijt</span><span class="menu-item-leader"></span><span class="menu-item-price">€10</span></div><p class="menu-item-desc">2 gebakken eieren met olijfolie en komijn, olijven, la vache qui rit, worst, thee en jus d'orange</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Marokkaans ontbijt plus</span><span class="menu-item-leader"></span><span class="menu-item-price">€13,50</span></div><p class="menu-item-desc">2 gebakken eieren met olijfolie en komijn, olijven, la vache qui rit, worst, harcha, msemen, thee en jus d'orange</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Marokkaans ei met tomaat</span><span class="menu-item-leader"></span><span class="menu-item-price">€11</span></div><p class="menu-item-desc">Roereieren met tomaten en kruiden, geserveerd met thee en jus d'orange</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Msemen naturel</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div><p class="menu-item-desc">Geserveerd met honing en la vache qui rit</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Msemen kaas</span><span class="menu-item-leader"></span><span class="menu-item-price">€7</span></div><p class="menu-item-desc">Geserveerd met honing</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Smashed avocado</span><span class="menu-item-leader"></span><span class="menu-item-price">€10</span></div><p class="menu-item-desc">Toast met avocado puree en gebakken ei</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Toast scrambled eggs</span><span class="menu-item-leader"></span><span class="menu-item-price">€13</span></div><p class="menu-item-desc">Met zalm, avocado en truffelmayonaise</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Uitsmijter</span><span class="menu-item-leader"></span><span class="menu-item-price">€12</span></div><p class="menu-item-desc">2 toasts met gebakken eieren, ham en kaas</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Fruitbowl</span><span class="menu-item-leader"></span><span class="menu-item-price">€9</span></div><p class="menu-item-desc">Yoghurt met vers fruit, noten en granola</p></div>
+        </div>
+      </section>
+
+      <!-- BROODJES -->
+      <section id="broodjes" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Broodjes</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje carpaccio</span><span class="menu-item-leader"></span><span class="menu-item-price">€11</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje gezond</span><span class="menu-item-leader"></span><span class="menu-item-price">€7,50</span></div><p class="menu-item-desc">Kaas, kalkoenham, ei en sla</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje kip truffel</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Kipfilet plakjes (beleg), avocado, ei, truffelmayonaise en pijnboompitten</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje kip pesto</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Kipfilet plakjes (beleg), avocado, ei, pesto mayonaise en pijnboompitten</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje kip kerrie</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Kipfilet plakjes (beleg), gebakken ui, ei en kerrie saus</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje zalm</span><span class="menu-item-leader"></span><span class="menu-item-price">€9</span></div><p class="menu-item-desc">Gerookte zalm met kruidenkaas, avocado en ei</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje pastrami truffel</span><span class="menu-item-leader"></span><span class="menu-item-price">€9</span></div><p class="menu-item-desc">Met truffelmayonaise, avocado, tomaat en parmezaanse kaas</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje pastrami mosterd</span><span class="menu-item-leader"></span><span class="menu-item-price">€9</span></div><p class="menu-item-desc">Met honingmosterd saus, augurken, zongedroogde tomaat en parmezaanse kaas</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje huisgemaakte tonijn</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Met sriracha mayonaise, rode ui en stukjes appel</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Velvet wrap</span><span class="menu-item-leader"></span><span class="menu-item-price">€7,50</span></div><p class="menu-item-desc">Met tonijn, jalapeños, rode ui, rucola en sriracha mayonaise</p></div>
+        </div>
+      </section>
+
+      <!-- LUNCH -->
+      <section id="lunch" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Lunch</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje grillworst</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div><p class="menu-item-desc">Keuze uit pikant of naturel</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje grillworst speciaal</span><span class="menu-item-leader"></span><span class="menu-item-price">€8,50</span></div><p class="menu-item-desc">Met jalapeños, gebakken ui en saus</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Panini grillworst</span><span class="menu-item-leader"></span><span class="menu-item-price">€7,50</span></div><p class="menu-item-desc">Met kaas, sla en saus</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Msemen grillworst</span><span class="menu-item-leader"></span><span class="menu-item-price">€10</span></div><p class="menu-item-desc">Met sla en saus</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Tuna melt</span><span class="menu-item-leader"></span><span class="menu-item-price">€8,50</span></div><p class="menu-item-desc">Tonijnsalade met rode ui, stukjes appel, jalapeños en cheddarkaas uit de oven</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Broodje brie</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Met walnoten en honing</p></div>
+        </div>
+      </section>
+
+      <!-- PANCAKES -->
+      <section id="pancakes" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Pancakes</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Pancakes vers fruit</span><span class="menu-item-leader"></span><span class="menu-item-price">€13</span></div><p class="menu-item-desc">Met vers fruit, slagroom en siroop</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Pancakes banaan</span><span class="menu-item-leader"></span><span class="menu-item-price">€13</span></div><p class="menu-item-desc">Met gekarameliseerde banaan en noten</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Pancakes lotus</span><span class="menu-item-leader"></span><span class="menu-item-price">€13</span></div><p class="menu-item-desc">Met slagroom</p></div>
+        </div>
+      </section>
+
+      <!-- SNACKS -->
+      <section id="snacks" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Snacks</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Popcorn shrimps</span><span class="menu-item-leader"></span><span class="menu-item-price">€9,50</span></div><p class="menu-item-desc">Met sriracha mayonaise</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Friet parmezan</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div><p class="menu-item-desc">Vlaamse friet met Parmezaanse kaas en truffelmayonaise</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Zoete aardappel friet</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div><p class="menu-item-desc">Met truffelmayonaise</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Snackmandje</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Mandje met diverse snacks</p></div>
+        </div>
+      </section>
+
+      <!-- SWEETS -->
+      <section id="sweets" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Sweets</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Naked velvet punt</span><span class="menu-item-leader"></span><span class="menu-item-price">€7</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Carrot cake</span><span class="menu-item-leader"></span><span class="menu-item-price">€7</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Dadel cheesecake</span><span class="menu-item-leader"></span><span class="menu-item-price">€7</span></div></div>
+        </div>
+      </section>
+
+      <!-- WARME DRANKEN -->
+      <section id="warm" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Warme dranken</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Koffie</span><span class="menu-item-leader"></span><span class="menu-item-price">€3</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Espresso</span><span class="menu-item-leader"></span><span class="menu-item-price">€3</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Dubbele espresso</span><span class="menu-item-leader"></span><span class="menu-item-price">€4</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Americano</span><span class="menu-item-leader"></span><span class="menu-item-price">€3</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Cappuccino</span><span class="menu-item-leader"></span><span class="menu-item-price">€3,75</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Latte Macchiato</span><span class="menu-item-leader"></span><span class="menu-item-price">€4</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Hot chocolate</span><span class="menu-item-leader"></span><span class="menu-item-price">€4,50</span></div><p class="menu-item-desc">Met slagroom</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Pumpkin spice</span><span class="menu-item-leader"></span><span class="menu-item-price">€6</span></div><p class="menu-item-desc">Met slagroom</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Chai latte</span><span class="menu-item-leader"></span><span class="menu-item-price">€5,50</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Thee</span><span class="menu-item-leader"></span><span class="menu-item-price">€2,50</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Marokkaanse thee</span><span class="menu-item-leader"></span><span class="menu-item-price">€2,50</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Verse muntthee</span><span class="menu-item-leader"></span><span class="menu-item-price">€3,50</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Verse gemberthee</span><span class="menu-item-leader"></span><span class="menu-item-price">€3,50</span></div></div>
+        </div>
+      </section>
+
+      <!-- KOUDE DRANKEN -->
+      <section id="koud" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Koude dranken</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Frisdrank</span><span class="menu-item-leader"></span><span class="menu-item-price">€3</span></div><p class="menu-item-desc">Cola, fanta, ice tea green, ice tea peach en water (ginger ale, redbull, fristi, chocomelk en sinaasappelsap +€0,50)</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Matcha iced latte</span><span class="menu-item-leader"></span><span class="menu-item-price">€8</span></div><p class="menu-item-desc">Aardbei, mango, passion, vanille of kokos</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Frappuccino</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div><p class="menu-item-desc">Met caramel en slagroom</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Homemade iced tea</span><span class="menu-item-leader"></span><span class="menu-item-price">€5</span></div><p class="menu-item-desc">Watermeloen, mango of passievrucht</p></div>
+        </div>
+      </section>
+
+      <!-- SMOOTHIES -->
+      <section id="smoothies" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Smoothies</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Tropicana</span><span class="menu-item-leader"></span><span class="menu-item-price">€6</span></div><p class="menu-item-desc">Mango, ananas en passievrucht</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Berrymania</span><span class="menu-item-leader"></span><span class="menu-item-price">€6</span></div><p class="menu-item-desc">Rood fruit</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Velvet dream</span><span class="menu-item-leader"></span><span class="menu-item-price">€6</span></div><p class="menu-item-desc">Met aardbei, banaan, mango, ananas</p></div>
+        </div>
+      </section>
+
+      <!-- SHAKES -->
+      <section id="shakes" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Shakes</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Avocado shake</span><span class="menu-item-leader"></span><span class="menu-item-price">€5,50</span></div></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Aardbeien shake</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div><p class="menu-item-desc">Met slagroom</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Bananen shake</span><span class="menu-item-leader"></span><span class="menu-item-price">€6,50</span></div></div>
+        </div>
+      </section>
+
+      <!-- MOCKTAILS -->
+      <section id="mocktails" class="scroll-mt-44 reveal" data-reveal>
+        <h2 class="menu-category-title">Mocktails</h2>
+        <div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Mojito</span><span class="menu-item-leader"></span><span class="menu-item-price">€7,50</span></div><p class="menu-item-desc">Keuze uit strawberry, munt, passion of coconut dream</p></div>
+          <div class="menu-list-item"><div class="menu-item-head"><span class="menu-item-name">Mojito Curaçao</span><span class="menu-item-leader"></span><span class="menu-item-price">€9</span></div><p class="menu-item-desc">Met redbull</p></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-24 reveal" data-reveal>
+      <p class="font-serif text-2xl md:text-3xl italic text-ink/80 mb-8">Zin gekregen? Kom gezellig langs bij Velvet.</p>
+      <a href="index.html#contact" class="btn-gold px-10 py-4 text-sm tracking-widest uppercase">Bekijk Locatie</a>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-ink text-offwhite/70 pt-16 pb-8 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <div class="flex flex-col leading-none mb-4">
+          <span class="font-serif text-3xl font-semibold text-gold tracking-[0.25em]">VELVET</span>
+          <span class="text-[0.6rem] text-gold/70 tracking-[0.3em] uppercase mt-1">Ontbijt en Lunchroom</span>
+        </div>
+        <p class="font-light text-sm leading-relaxed max-w-xs">Een exclusieve lunchroom waar ambacht en gastvrijheid samenkomen.</p>
+      </div>
+      <div>
+        <h4 class="text-offwhite tracking-widest uppercase text-sm mb-4">Navigatie</h4>
+        <ul class="space-y-2 text-sm font-light">
+          <li><a href="index.html#about" class="hover:text-gold transition-colors">Over Velvet</a></li>
+          <li><a href="menu.html" class="hover:text-gold transition-colors">Menu</a></li>
+          <li><a href="catering.html" class="hover:text-gold transition-colors">Verhuur & Catering</a></li>
+          <li><a href="index.html#gallery" class="hover:text-gold transition-colors">Galerij</a></li>
+          <li><a href="index.html#reviews" class="hover:text-gold transition-colors">Reviews</a></li>
+          <li><a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-offwhite tracking-widest uppercase text-sm mb-4">Volg ons</h4>
+        <div class="flex gap-4 mb-6">
+          <a href="https://www.instagram.com/velvet_lunchroom/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.86 2.86 0 0 0-.69-1.06 2.86 2.86 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07Zm0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84Zm0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm5.6-2.93a1.27 1.27 0 1 1 0 2.54 1.27 1.27 0 0 1 0-2.54Z"/></svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@velvetlunchroom" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.05-2.82h-2.9v11.4a2.6 2.6 0 0 1-2.6 2.5 2.6 2.6 0 0 1 0-5.2c.27 0 .53.04.77.12v-2.96a5.51 5.51 0 0 0-.77-.05A5.5 5.5 0 1 0 15.45 14V8.34a7.13 7.13 0 0 0 4.17 1.33V6.77a4.28 4.28 0 0 1-3.02-.95Z"/></svg>
+            <span class="sr-only">TikTok</span>
+          </a>
+        </div>
+        <p class="text-sm font-light">info@velvetlunchroom.nl<br/>06 36 15 89 41</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 text-center text-xs tracking-wide text-offwhite/50">
+      © <span id="year"></span> VELVET Lunchroom — Alle rechten voorbehouden.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    /* Active tab highlight on scroll */
+    const tabLinks = [...document.querySelectorAll('#menuTabs a')];
+    const sections = tabLinks.map(a => document.querySelector(a.getAttribute('href')));
+    const tabObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          tabLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+          const activeTab = document.querySelector(`#menuTabs a[href="#${id}"]`);
+          if (activeTab) activeTab.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(s => s && tabObserver.observe(s));
+  </script>
+</body>
+</html>

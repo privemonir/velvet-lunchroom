@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verhuur & Catering — Binnenkort | VELVET Lunchroom</title>
+  <meta name="description" content="Verhuur & catering bij VELVET Lunchroom komt binnenkort beschikbaar. Borrels, high tea, bedrijfslunches en private events — op aanvraag." />
+  <meta name="theme-color" content="#B89A5D" />
+  <link rel="canonical" href="https://www.velvetlunchroom.nl/catering.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Verhuur & Catering — Binnenkort | VELVET Lunchroom" />
+  <meta property="og:description" content="Borrels, high tea, bedrijfslunches en private events — vers, halal en op aanvraag. Binnenkort beschikbaar." />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:url" content="https://www.velvetlunchroom.nl/catering.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { offwhite:'#F8F6F2', gold:'#B89A5D', darkgold:'#8D7441', beige:'#EFE8DC', ink:'#2C2C2C' },
+          fontFamily: { serif:['"Cormorant Garamond"','serif'], sans:['Jost','sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-offwhite text-ink font-sans antialiased">
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 scrolled">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+      <a href="index.html#hero" class="flex flex-col items-start leading-none" aria-label="VELVET home">
+        <span class="logo-word font-serif text-3xl md:text-4xl font-semibold text-gold tracking-[0.25em]">VELVET</span>
+        <span class="logo-sub text-[0.55rem] md:text-[0.6rem] text-darkgold tracking-[0.3em] uppercase mt-1">Ontbijt en Lunchroom</span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-widest uppercase">
+        <li><a href="index.html#about" class="nav-link">Over Velvet</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="catering.html" class="nav-link text-gold">Verhuur & Catering<span class="nav-soon">Soon</span></a></li>
+        <li><a href="index.html#gallery" class="nav-link">Galerij</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="index.html" class="hidden lg:inline-flex btn-outline text-xs tracking-widest uppercase px-6 py-3">Home</a>
+      <button id="menuToggle" class="lg:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-end" aria-label="Menu openen">
+        <span class="block w-7 h-px bg-ink"></span><span class="block w-5 h-px bg-ink"></span><span class="block w-7 h-px bg-ink"></span>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden fixed inset-0 bg-offwhite z-40 flex flex-col items-center justify-center gap-8 text-lg tracking-widest uppercase transition-all duration-500 opacity-0 pointer-events-none -translate-y-4">
+      <a href="index.html#about" class="mobile-link">Over Velvet</a>
+      <a href="menu.html" class="mobile-link">Menu</a>
+      <a href="catering.html" class="mobile-link text-gold">Verhuur & Catering</a>
+      <a href="index.html#gallery" class="mobile-link">Galerij</a>
+      <a href="index.html#contact" class="mobile-link">Contact</a>
+      <a href="index.html" class="btn-gold px-8 py-3 text-sm mt-4">Home</a>
+    </div>
+  </header>
+
+  <!-- ===== COMING SOON ===== -->
+  <main class="coming-soon-page relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+    <div class="coming-soon-glow"></div>
+
+    <div class="relative z-10 text-center max-w-2xl mx-auto reveal" data-reveal>
+      <span class="coming-soon-badge">✦ Coming soon</span>
+
+      <h1 class="font-serif text-5xl md:text-7xl font-semibold mt-8 mb-6 leading-tight">Verhuur &amp; Catering</h1>
+
+      <div class="flex items-center justify-center gap-4 mb-8">
+        <span class="h-px w-12 bg-gold"></span>
+        <p class="text-gold font-serif italic text-xl md:text-2xl">Binnenkort beschikbaar</p>
+        <span class="h-px w-12 bg-gold"></span>
+      </div>
+
+      <p class="text-ink/70 font-light leading-relaxed mb-10 max-w-xl mx-auto">
+        We werken aan iets moois. Straks kunt u bij VELVET terecht voor borrels, high tea, bedrijfslunches, verjaardagen en catering op locatie — alles vers, halal en op aanvraag samengesteld. Houd onze pagina en Instagram in de gaten!
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://www.instagram.com/velvet_lunchroom/" target="_blank" rel="noopener" class="btn-gold px-10 py-4 text-sm tracking-widest uppercase">Volg ons op Instagram</a>
+        <a href="index.html" class="btn-outline px-10 py-4 text-sm tracking-widest uppercase">Terug naar home</a>
+      </div>
+
+      <p class="text-ink/50 text-sm mt-10">
+        Nu al een vraag? Bel <a href="tel:+31636158941" class="text-gold hover:underline">06 36 15 89 41</a>
+        of mail <a href="mailto:info@velvetlunchroom.nl" class="text-gold hover:underline">info@velvetlunchroom.nl</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-ink text-offwhite/70 pt-16 pb-8 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <div class="flex flex-col leading-none mb-4">
+          <span class="font-serif text-3xl font-semibold text-gold tracking-[0.25em]">VELVET</span>
+          <span class="text-[0.6rem] text-gold/70 tracking-[0.3em] uppercase mt-1">Ontbijt en Lunchroom</span>
+        </div>
+        <p class="font-light text-sm leading-relaxed max-w-xs">Een exclusieve lunchroom waar ambacht en gastvrijheid samenkomen.</p>
+      </div>
+      <div>
+        <h4 class="text-offwhite tracking-widest uppercase text-sm mb-4">Navigatie</h4>
+        <ul class="space-y-2 text-sm font-light">
+          <li><a href="index.html#about" class="hover:text-gold transition-colors">Over Velvet</a></li>
+          <li><a href="menu.html" class="hover:text-gold transition-colors">Menu</a></li>
+          <li><a href="catering.html" class="hover:text-gold transition-colors">Verhuur & Catering</a></li>
+          <li><a href="index.html#gallery" class="hover:text-gold transition-colors">Galerij</a></li>
+          <li><a href="index.html#contact" class="hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-offwhite tracking-widest uppercase text-sm mb-4">Volg ons</h4>
+        <div class="flex gap-4 mb-6">
+          <a href="https://www.instagram.com/velvet_lunchroom/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.86 2.86 0 0 0-.69-1.06 2.86 2.86 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07Zm0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84Zm0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm5.6-2.93a1.27 1.27 0 1 1 0 2.54 1.27 1.27 0 0 1 0-2.54Z"/></svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@velvetlunchroom" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.05-2.82h-2.9v11.4a2.6 2.6 0 0 1-2.6 2.5 2.6 2.6 0 0 1 0-5.2c.27 0 .53.04.77.12v-2.96a5.51 5.51 0 0 0-.77-.05A5.5 5.5 0 1 0 15.45 14V8.34a7.13 7.13 0 0 0 4.17 1.33V6.77a4.28 4.28 0 0 1-3.02-.95Z"/></svg>
+            <span class="sr-only">TikTok</span>
+          </a>
+        </div>
+        <p class="text-sm font-light">info@velvetlunchroom.nl<br/>06 36 15 89 41</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 text-center text-xs tracking-wide text-offwhite/50">
+      © <span id="year"></span> VELVET Lunchroom — Alle rechten voorbehouden.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

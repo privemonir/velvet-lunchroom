@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELVET — Ontbijt • Lunch • Koffie | Luxe Lunchroom</title>
+  <meta name="description" content="VELVET is een exclusieve lunchroom voor ontbijt, lunch en koffie. Verse ingrediënten, ambachtelijke bereiding en een warme, luxe sfeer." />
+  <meta name="keywords" content="lunchroom, ontbijt, lunch, koffie, patisserie, VELVET, luxe café, brunch" />
+  <meta name="author" content="VELVET" />
+  <meta name="theme-color" content="#B89A5D" />
+  <link rel="canonical" href="https://www.velvetlunchroom.nl/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="VELVET — Luxe Lunchroom" />
+  <meta property="og:description" content="Ontbijt • Lunch • Koffie. Een exclusieve lunchroom met verse ingrediënten en ambachtelijke bereiding." />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:url" content="https://www.velvetlunchroom.nl/" />
+  <meta property="og:image" content="https://www.velvetlunchroom.nl/assets/hero-velvet.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preload" as="image" href="assets/hero-velvet.webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            offwhite: '#F8F6F2',
+            gold: '#B89A5D',
+            darkgold: '#8D7441',
+            beige: '#EFE8DC',
+            ink: '#2C2C2C',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Jost', 'sans-serif'],
+          },
+          letterSpacing: {
+            luxe: '0.35em',
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO: Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "VELVET",
+    "description": "Luxe lunchroom voor ontbijt, lunch en koffie.",
+    "servesCuisine": ["Ontbijt", "Lunch", "Koffie", "Patisserie"],
+    "priceRange": "€ 10-20",
+    "telephone": "+31 6 36158941",
+    "email": "info@velvetlunchroom.nl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Marco Pololaan 363-365",
+      "addressLocality": "Utrecht",
+      "postalCode": "3526 GG",
+      "addressCountry": "NL"
+    },
+    "containedInPlace": {
+      "@type": "ShoppingCenter",
+      "name": "Winkelcentrum Vasco Da Gama"
+    },
+    "openingHours": ["Mo 09:00-18:00", "We-Fr 09:00-18:00", "Sa-Su 10:00-18:00"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "69",
+      "bestRating": "5"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Halal", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Veganistische opties", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Gratis wifi", "value": true }
+    ],
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Nirmine" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "We komen hier regelmatig voor een heerlijk Marokkaans ontbijtje. Alles is vers en smaakvol." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Jahmal van Dams" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Velvet Lunchroom is mijn favoriete plek voor een lunch! Het eten is altijd even lekker." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Miri Reuben" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Alles is hier lekker, van fruitbowl tot aan scrambled eggs. Kwaliteit is constant." }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-offwhite text-ink font-sans antialiased has-hero">
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="#hero" class="flex flex-col items-start leading-none group" aria-label="VELVET home">
+        <span class="logo-word font-serif text-3xl md:text-4xl font-semibold text-gold tracking-[0.25em] transition-colors duration-300">VELVET</span>
+        <span class="logo-sub text-[0.55rem] md:text-[0.6rem] text-darkgold tracking-[0.3em] uppercase mt-1 transition-colors duration-300">Ontbijt en Lunchroom</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-widest uppercase">
+        <li><a href="#about" class="nav-link">Over Velvet</a></li>
+        <li><a href="catering.html" class="nav-link">Verhuur & Catering<span class="nav-soon">Soon</span></a></li>
+        <li><a href="#gallery" class="nav-link">Galerij</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="menu.html" class="hidden lg:inline-flex btn-outline text-xs tracking-widest uppercase px-6 py-3">Bekijk Menu</a>
+
+      <!-- Mobile toggle -->
+      <button id="menuToggle" class="lg:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-end" aria-label="Menu openen">
+        <span class="block w-7 h-px bg-ink transition-all"></span>
+        <span class="block w-5 h-px bg-ink transition-all"></span>
+        <span class="block w-7 h-px bg-ink transition-all"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="lg:hidden fixed inset-0 bg-offwhite z-40 flex flex-col items-center justify-center gap-8 text-lg tracking-widest uppercase transition-all duration-500 opacity-0 pointer-events-none -translate-y-4">
+      <a href="#about" class="mobile-link">Over Velvet</a>
+      <a href="catering.html" class="mobile-link">Verhuur & Catering</a>
+      <a href="#gallery" class="mobile-link">Galerij</a>
+      <a href="#reviews" class="mobile-link">Reviews</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="menu.html" class="btn-gold px-8 py-3 text-sm mt-4">Bekijk Menu</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 hero-bg"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/60 to-ink/75"></div>
+
+    <div class="relative z-10 text-center px-6 reveal" data-reveal>
+      <p class="text-beige/90 tracking-[0.4em] uppercase text-xs md:text-sm mb-6">Welkom bij</p>
+      <h1 class="font-serif text-7xl md:text-9xl font-semibold text-white tracking-[0.15em] drop-shadow-lg">VELVET</h1>
+      <div class="flex items-center justify-center gap-4 my-6">
+        <span class="h-px w-12 bg-gold"></span>
+        <p class="text-gold font-serif italic text-xl md:text-2xl">Ontbijt • Lunch • Koffie</p>
+        <span class="h-px w-12 bg-gold"></span>
+      </div>
+      <p class="text-beige/80 max-w-xl mx-auto font-light leading-relaxed mb-10">
+        Een exclusieve lunchroom waar ambacht, verse ingrediënten en warme gastvrijheid samenkomen.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="menu.html" class="btn-gold px-10 py-4 text-sm tracking-widest uppercase">Bekijk Menu</a>
+      </div>
+    </div>
+
+    <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/70 animate-bounce" aria-label="Scroll naar beneden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== OVER VELVET ===== -->
+  <section id="about" class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div class="reveal" data-reveal>
+        <div class="relative">
+          <img src="assets/hero-velvet.webp" alt="Interieur van VELVET lunchroom" class="rounded-sm shadow-2xl w-full object-cover h-[520px]" loading="lazy" />
+        </div>
+      </div>
+      <div class="reveal" data-reveal data-delay="150">
+        <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4">Over Velvet</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-6 leading-tight">Waar elke hap een<br/>moment van luxe is</h2>
+        <p class="text-ink/70 leading-relaxed mb-5 font-light">
+          Bij VELVET geloven we dat goed eten begint met de beste ingrediënten. Elke ochtend selecteren we verse, lokale producten en bereiden we alles met zorg en aandacht — van ons knapperige ambachtelijke brood tot de fijnste patisserie.
+        </p>
+        <p class="text-ink/70 leading-relaxed mb-8 font-light">
+          In een warme, elegante omgeving combineren we de gezelligheid van een boutique café met de verfijning van een high-end patisserie. Gastvrijheid staat bij ons centraal: u bent hier niet zomaar een gast, u bent thuis.
+        </p>
+        <div class="grid grid-cols-3 gap-6 text-center">
+          <div>
+            <p class="font-serif text-3xl text-gold">100%</p>
+            <p class="text-xs tracking-wide uppercase text-ink/60 mt-1">Vers bereid</p>
+          </div>
+          <div>
+            <p class="font-serif text-3xl text-gold">Lokaal</p>
+            <p class="text-xs tracking-wide uppercase text-ink/60 mt-1">Ingrediënten</p>
+          </div>
+          <div>
+            <p class="font-serif text-3xl text-gold">Ambacht</p>
+            <p class="text-xs tracking-wide uppercase text-ink/60 mt-1">Met passie</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU HIGHLIGHTS ===== -->
+  <section id="menu" class="py-24 md:py-32 px-6 lg:px-10 bg-beige/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal" data-reveal>
+        <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4">Onze Kaart</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-5">Menu Highlights</h2>
+        <p class="text-ink/70 font-light leading-relaxed">Ontdek een selectie van onze favorieten — met liefde en vakmanschap samengesteld voor elk moment van de dag.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card -->
+        <a href="menu.html#ontbijt" class="menu-card reveal block" data-reveal>
+          <div class="overflow-hidden rounded-sm">
+            <img src="assets/ontbijt.jpg" alt="Verse fruitbowls met granola bij Velvet" class="menu-img" loading="lazy" />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl mb-2">Ontbijt</h3>
+            <p class="text-ink/60 text-sm font-light leading-relaxed">Marokkaans ontbijt, smashed avocado, uitsmijter en verse fruitbowls.</p>
+            <span class="inline-block mt-4 text-gold text-xs tracking-widest uppercase">Vanaf €6,50</span>
+          </div>
+        </a>
+
+        <a href="menu.html#lunch" class="menu-card reveal block" data-reveal data-delay="100">
+          <div class="overflow-hidden rounded-sm">
+            <img src="assets/lunch.jpg" alt="Brunchplank met panini, kaas en msemen bij Velvet" class="menu-img" loading="lazy" />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl mb-2">Lunch & Broodjes</h3>
+            <p class="text-ink/60 text-sm font-light leading-relaxed">Broodje carpaccio, kip truffel, zalm, tuna melt en de Velvet wrap.</p>
+            <span class="inline-block mt-4 text-gold text-xs tracking-widest uppercase">Vanaf €6,50</span>
+          </div>
+        </a>
+
+        <a href="menu.html#warm" class="menu-card reveal block" data-reveal data-delay="200">
+          <div class="overflow-hidden rounded-sm">
+            <img src="assets/koffie.jpg" alt="Verse latte met Biscoff bij Velvet" class="menu-img" loading="lazy" />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl mb-2">Koffie & Thee</h3>
+            <p class="text-ink/60 text-sm font-light leading-relaxed">Barista-koffie, chai latte, pumpkin spice en verse Marokkaanse thee.</p>
+            <span class="inline-block mt-4 text-gold text-xs tracking-widest uppercase">Vanaf €2,50</span>
+          </div>
+        </a>
+
+        <a href="menu.html#sweets" class="menu-card reveal block" data-reveal data-delay="300">
+          <div class="overflow-hidden rounded-sm">
+            <img src="assets/zoetigheden.jpg" alt="Gevulde donuts met verse bessen bij Velvet" class="menu-img" loading="lazy" />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl mb-2">Zoetigheden</h3>
+            <p class="text-ink/60 text-sm font-light leading-relaxed">Naked velvet punt, carrot cake, dadel cheesecake en luxe pancakes.</p>
+            <span class="inline-block mt-4 text-gold text-xs tracking-widest uppercase">Vanaf €7,00</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-14 reveal" data-reveal>
+        <a href="menu.html" class="btn-gold px-10 py-4 text-sm tracking-widest uppercase">Bekijk volledige menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIJ (Masonry) ===== -->
+  <section id="gallery" class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal" data-reveal>
+        <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4">Sfeer & Smaak</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-5">Fotogalerij</h2>
+        <p class="text-ink/70 font-light leading-relaxed">Een blik op onze gerechten, ons interieur en de details die VELVET bijzonder maken. Voor de nieuwste foto's én video's van al ons lekkers vind je ons op Instagram en TikTok.</p>
+      </div>
+
+      <div class="masonry reveal" data-reveal>
+        <div class="masonry-item video-item">
+          <video src="assets/gallery/velvet-1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sfeervideo van gerechten bij Velvet"></video>
+        </div>
+        <div class="masonry-item"><img src="assets/gallery/g-01.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-02.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-03.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-04.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-05.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-06.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-07.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item"><img src="assets/gallery/g-08.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item video-item is-hidden">
+          <video src="assets/gallery/velvet-5.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sfeervideo van gerechten bij Velvet"></video>
+        </div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-09.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-10.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-11.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-12.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-13.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-14.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-15.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-16.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-17.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item video-item is-hidden">
+          <video src="assets/gallery/velvet-6.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sfeervideo van gerechten bij Velvet"></video>
+        </div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-18.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-19.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-20.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-21.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-22.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-23.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-24.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+        <div class="masonry-item is-hidden"><img src="assets/gallery/g-25.jpg" alt="Gerecht bij Velvet" loading="lazy" /></div>
+      </div>
+
+      <div class="text-center mt-12 reveal" data-reveal>
+        <button id="galleryMore" class="btn-outline px-10 py-4 text-sm tracking-widest uppercase" aria-expanded="false">Bekijk meer</button>
+      </div>
+
+      <!-- Doorverwijzing naar social media voor foto's & video's -->
+      <div class="text-center mt-16 reveal" data-reveal>
+        <p class="font-serif text-2xl md:text-3xl italic text-ink/80 mb-2">Meer zien van ons eten?</p>
+        <p class="text-ink/60 font-light mb-8">Bekijk al onze foto's en video's op Instagram en TikTok.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="https://www.instagram.com/velvet_lunchroom/" target="_blank" rel="noopener" class="btn-gold inline-flex items-center gap-3 px-8 py-3 text-sm tracking-widest uppercase">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-.97.04-1.5.21-1.85.34-.46.18-.8.4-1.15.74-.34.35-.56.69-.74 1.15-.13.35-.3.88-.34 1.85-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.97.21 1.5.34 1.85.18.46.4.8.74 1.15.35.34.69.56 1.15.74.35.13.88.3 1.85.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.97-.04 1.5-.21 1.85-.34.46-.18.8-.4 1.15-.74.34-.35.56-.69.74-1.15.13-.35.3-.88.34-1.85.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.97-.21-1.5-.34-1.85a3.1 3.1 0 0 0-.74-1.15 3.1 3.1 0 0 0-1.15-.74c-.35-.13-.88-.3-1.85-.34-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.95-9.22a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@velvetlunchroom" target="_blank" rel="noopener" class="btn-outline inline-flex items-center gap-3 px-8 py-3 text-sm tracking-widest uppercase">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.05-2.82h-2.9v11.4a2.6 2.6 0 0 1-2.6 2.5 2.6 2.6 0 0 1 0-5.2c.27 0 .53.04.77.12v-2.96a5.51 5.51 0 0 0-.77-.05A5.5 5.5 0 1 0 15.45 14V8.34a7.13 7.13 0 0 0 4.17 1.33V6.77a4.28 4.28 0 0 1-3.02-.95Z"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTAGRAM ===== -->
+  <section id="instagram" class="py-24 md:py-32 px-6 lg:px-10 bg-beige/40">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal" data-reveal>
+        <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4">Volg ons</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-5">@velvet_lunchroom</h2>
+        <p class="text-ink/70 font-light leading-relaxed mb-8">Blijf op de hoogte van onze nieuwste gerechten, sfeer en specials op Instagram.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="https://www.instagram.com/velvet_lunchroom/" target="_blank" rel="noopener" class="btn-gold inline-flex items-center gap-3 px-8 py-3 text-sm tracking-widest uppercase">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.5.01-4.74.07-.97.04-1.5.21-1.85.34-.46.18-.8.4-1.15.74-.34.35-.56.69-.74 1.15-.13.35-.3.88-.34 1.85-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.97.21 1.5.34 1.85.18.46.4.8.74 1.15.35.34.69.56 1.15.74.35.13.88.3 1.85.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.97-.04 1.5-.21 1.85-.34.46-.18.8-.4 1.15-.74.34-.35.56-.69.74-1.15.13-.35.3-.88.34-1.85.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.97-.21-1.5-.34-1.85a3.1 3.1 0 0 0-.74-1.15 3.1 3.1 0 0 0-1.15-.74c-.35-.13-.88-.3-1.85-.34-1.24-.06-1.59-.07-4.74-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.95-9.22a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg>
+            Volg op Instagram
+          </a>
+          <a href="https://www.tiktok.com/@velvetlunchroom" target="_blank" rel="noopener" class="btn-gold inline-flex items-center gap-3 px-8 py-3 text-sm tracking-widest uppercase">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.05-2.82h-2.9v11.4a2.6 2.6 0 0 1-2.6 2.5 2.6 2.6 0 0 1 0-5.2c.27 0 .53.04.77.12v-2.96a5.51 5.51 0 0 0-.77-.05A5.5 5.5 0 1 0 15.45 14V8.34a7.13 7.13 0 0 0 4.17 1.33V6.77a4.28 4.28 0 0 1-3.02-.95Z"/></svg>
+            Volg op TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" class="py-24 md:py-32 px-6 lg:px-10 bg-ink text-offwhite relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_top,_#B89A5D,_transparent_60%)]"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4 reveal" data-reveal>Wat gasten zeggen</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-8 reveal" data-reveal>Reviews</h2>
+
+      <!-- Google rating badge -->
+      <a href="https://www.google.com/search?q=Velvet+lunchroom+Utrecht" target="_blank" rel="noopener"
+         class="google-badge reveal" data-reveal aria-label="Google-beoordeling 4,6 van 5 sterren, 69 reviews">
+        <svg viewBox="0 0 24 24" class="w-6 h-6" aria-hidden="true"><path fill="#EA4335" d="M12 10.2v3.9h5.5a4.7 4.7 0 0 1-2 3.1v2.6h3.3c1.9-1.8 3-4.4 3-7.5 0-.7-.06-1.4-.18-2.1H12z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.7-2.4l-3.3-2.6c-.9.6-2.1 1-3.4 1a5.9 5.9 0 0 1-5.6-4.1H3v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 13.9a6 6 0 0 1 0-3.8V7.5H3a10 10 0 0 0 0 9z"/><path fill="#4285F4" d="M12 6.1c1.5 0 2.8.5 3.9 1.5l2.9-2.9A10 10 0 0 0 3 7.5l3.4 2.6A5.9 5.9 0 0 1 12 6.1z"/></svg>
+        <span class="google-badge-score">4,6</span>
+        <span class="google-badge-stars">★★★★★</span>
+        <span class="google-badge-count">69 Google reviews</span>
+      </a>
+
+      <div class="slider relative reveal mt-12" data-reveal>
+        <div id="sliderTrack" class="slider-track">
+          <!-- Slides -->
+          <figure class="slide">
+            <div class="stars">★★★★★</div>
+            <blockquote class="font-serif text-2xl md:text-3xl italic leading-relaxed mb-8">"We komen hier regelmatig voor een heerlijk Marokkaans ontbijtje. Alles is vers en smaakvol. Je kunt er rustig zitten en volop genieten. Een echte aanrader!"</blockquote>
+            <figcaption class="text-gold tracking-widest uppercase text-sm">Nirmine <span class="text-offwhite/40 normal-case tracking-normal">· via Google</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="stars">★★★★★</div>
+            <blockquote class="font-serif text-2xl md:text-3xl italic leading-relaxed mb-8">"Velvet Lunchroom is mijn favoriete plek voor een lunch! Ik kom hier al een hele tijd, en het eten is altijd even lekker en verzorgd. Zeker een aanrader."</blockquote>
+            <figcaption class="text-gold tracking-widest uppercase text-sm">Jahmal van Dams <span class="text-offwhite/40 normal-case tracking-normal">· via Google</span></figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="stars">★★★★★</div>
+            <blockquote class="font-serif text-2xl md:text-3xl italic leading-relaxed mb-8">"Alles is hier lekker, van fruitbowl tot aan scrambled eggs. De kwaliteit is constant en de sfeer heerlijk ontspannen."</blockquote>
+            <figcaption class="text-gold tracking-widest uppercase text-sm">Miri Reuben <span class="text-offwhite/40 normal-case tracking-normal">· via Google</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mt-10" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal" data-reveal>
+        <p class="text-gold tracking-[0.3em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-5">Contact & Openingstijden</h2>
+        <p class="text-ink/70 font-light">We verwelkomen u graag in onze lunchroom.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-stretch">
+        <!-- Info -->
+        <div class="reveal" data-reveal>
+          <div class="bg-beige/40 p-8 md:p-10 rounded-sm h-full">
+            <h3 class="font-serif text-2xl mb-6">Openingstijden</h3>
+            <ul class="space-y-3 text-ink/75 mb-10">
+              <li class="flex justify-between border-b border-gold/20 pb-3"><span>Maandag</span><span class="text-gold">09:00 – 18:00</span></li>
+              <li class="flex justify-between border-b border-gold/20 pb-3"><span>Dinsdag</span><span class="text-ink/40 italic">Gesloten</span></li>
+              <li class="flex justify-between border-b border-gold/20 pb-3"><span>Woensdag</span><span class="text-gold">09:00 – 18:00</span></li>
+              <li class="flex justify-between border-b border-gold/20 pb-3"><span>Donderdag</span><span class="text-gold">09:00 – 18:00</span></li>
+              <li class="flex justify-between border-b border-gold/20 pb-3"><span>Vrijdag</span><span class="text-gold">09:00 – 18:00</span></li>
+              <li class="flex justify-between border-b border-gold/20 pb-3"><span>Zaterdag</span><span class="text-gold">10:00 – 18:00</span></li>
+              <li class="flex justify-between"><span>Zondag</span><span class="text-gold">10:00 – 18:00</span></li>
+            </ul>
+
+            <h3 class="font-serif text-2xl mb-6">Gegevens</h3>
+            <ul class="space-y-4 text-ink/75">
+              <li class="flex items-start gap-4">
+                <span class="text-gold mt-1">📍</span>
+                <span>Marco Pololaan 363-365<br/>3526 GG Utrecht<br/><span class="text-ink/50 text-sm">In Winkelcentrum Vasco Da Gama</span></span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="text-gold">📞</span>
+                <a href="tel:+31636158941" class="hover:text-gold transition-colors">06 36 15 89 41</a>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="text-gold">✉️</span>
+                <a href="mailto:info@velvetlunchroom.nl" class="hover:text-gold transition-colors">info@velvetlunchroom.nl</a>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="text-gold">💶</span>
+                <span>Prijs per persoon <span class="text-gold">€ 10 – 20</span></span>
+              </li>
+            </ul>
+
+            <h3 class="font-serif text-2xl mt-10 mb-5">Voorzieningen</h3>
+            <ul class="flex flex-wrap gap-2.5">
+              <li class="feature-chip">🕌 100% Halal</li>
+              <li class="feature-chip">🌱 Veganistische opties</li>
+              <li class="feature-chip">📶 Gratis wifi</li>
+              <li class="feature-chip">🪑 Zitplaatsen</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="reveal" data-reveal data-delay="150">
+          <div class="h-full min-h-[420px] rounded-sm overflow-hidden shadow-lg">
+            <iframe
+              title="Locatie VELVET op Google Maps"
+              src="https://www.google.com/maps?q=Marco+Pololaan+363-365,+3526+GG+Utrecht&output=embed"
+              class="w-full h-full border-0 grayscale-[30%]"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-ink text-offwhite/70 pt-16 pb-8 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <div class="flex flex-col leading-none mb-4">
+          <span class="font-serif text-3xl font-semibold text-gold tracking-[0.25em]">VELVET</span>
+          <span class="text-[0.6rem] text-gold/70 tracking-[0.3em] uppercase mt-1">Ontbijt en Lunchroom</span>
+        </div>
+        <p class="font-light text-sm leading-relaxed max-w-xs">Een exclusieve lunchroom waar ambacht en gastvrijheid samenkomen.</p>
+      </div>
+      <div>
+        <h4 class="text-offwhite tracking-widest uppercase text-sm mb-4">Navigatie</h4>
+        <ul class="space-y-2 text-sm font-light">
+          <li><a href="#about" class="hover:text-gold transition-colors">Over Velvet</a></li>
+          <li><a href="menu.html" class="hover:text-gold transition-colors">Menu</a></li>
+          <li><a href="catering.html" class="hover:text-gold transition-colors">Verhuur & Catering</a></li>
+          <li><a href="#gallery" class="hover:text-gold transition-colors">Galerij</a></li>
+          <li><a href="#reviews" class="hover:text-gold transition-colors">Reviews</a></li>
+          <li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-offwhite tracking-widest uppercase text-sm mb-4">Volg ons</h4>
+        <div class="flex gap-4 mb-6">
+          <a href="https://www.instagram.com/velvet_lunchroom/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.86 2.86 0 0 0-.69-1.06 2.86 2.86 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07Zm0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84Zm0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm5.6-2.93a1.27 1.27 0 1 1 0 2.54 1.27 1.27 0 0 1 0-2.54Z"/></svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@velvetlunchroom" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.05-2.82h-2.9v11.4a2.6 2.6 0 0 1-2.6 2.5 2.6 2.6 0 0 1 0-5.2c.27 0 .53.04.77.12v-2.96a5.51 5.51 0 0 0-.77-.05A5.5 5.5 0 1 0 15.45 14V8.34a7.13 7.13 0 0 0 4.17 1.33V6.77a4.28 4.28 0 0 1-3.02-.95Z"/></svg>
+            <span class="sr-only">TikTok</span>
+          </a>
+        </div>
+        <p class="text-sm font-light">info@velvetlunchroom.nl<br/>06 36 15 89 41</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 text-center text-xs tracking-wide text-offwhite/50">
+      © <span id="year"></span> VELVET Lunchroom — Alle rechten voorbehouden.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
